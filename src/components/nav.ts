@@ -1,7 +1,7 @@
-import * as m from 'mithril';
+import m from 'mithril';
 
 export default {
-  view(v) {
-    return m('h1', 'title!!!!!!!!!!');
+  view() {
+    return m('h1', "aho");
   }
-}
+} as m.Component;
