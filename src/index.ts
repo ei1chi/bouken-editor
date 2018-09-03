@@ -1,12 +1,14 @@
-const m = require('mithril');
+import m from 'mithril';
 import nav from './components/nav';
 
-const root = document.getElementById('root')
-
 const c = {
-	view(v) {
+	view() {
 		return m('h1', 'title!!!!!!!!!!!!');
 	}
 }
 
-m.render(root, m(nav));
+const root = document.getElementById('root')
+if(root){
+	m.render(root, m(nav));
+}
+
